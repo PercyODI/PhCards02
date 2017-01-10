@@ -162,6 +162,9 @@ router.route('/cards')
 // all of our routes will be prefixed with /api
 
 app.use('/api', router)
+app.get('/', function(req, res) {
+	res.sendFile()
+})
 
 // START THE SERVER
 // =============================================================================
