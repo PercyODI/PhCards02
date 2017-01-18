@@ -20,5 +20,8 @@ COPY nginx.conf /etc/nginx/
 # Add rest of folder to /node
 COPY . /node
 
+# Build application
+RUN ng build
+
 CMD ["nginx", "-g", "daemon off;"]
 #CMD ["bash"]
