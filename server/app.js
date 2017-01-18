@@ -163,7 +163,7 @@ router.route('/cards')
 
 app.use('/api', router)
 app.get('/', function(req, res) {
-	res.sendFile()
+	res.sendFile('/node/client/src/index.html')
 })
 
 // START THE SERVER
